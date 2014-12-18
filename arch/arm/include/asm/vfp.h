@@ -4,6 +4,10 @@
  * VFP register definitions.
  * First, the standard VFP set.
  */
+#ifndef __ASSEMBLY__
+void kernel_vfp_begin(void);
+void kernel_vfp_end(void);
+#endif
 
 #define FPSID			cr0
 #define FPSCR			cr1
